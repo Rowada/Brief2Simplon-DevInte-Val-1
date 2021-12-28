@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <section>
+      <h1>Formulaire d'incription</h1>
+      <form>
+        <p>
+          <label for="prénom">Prénom</label>
+          <input
+            id="prénom"
+            name="prénom"
+            placeholder="Votre prénom"
+            autofocus=""
+          />
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" placeholder="Votre nom de famille" /><br />
+        </p>
+        <p>
+          <label for="age">Âge</label>
+          <input
+            id="age"
+            type="number"
+            name="age"
+            placeholder="ex: 21"
+            min="18"
+            max="100"
+          />
+          <label for="sexe">Sexe</label>
+          <select id="sexe" name="sexe">
+            <option value="Femme">Femme</option>
+            <option value="Homme">Homme</option>
+            <option value="Autre">Autre</option></select
+          ><br />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="prenom.nom@gmail.com"
+            pattern=".+gmail\.com"
+            size="30"
+            required
+          /><br />
+        </p>
+        <p>
+          <label for="adresse">Adresse</label>
+          <textarea
+            id="adresse"
+            name="adresse"
+            cols="20"
+            placeholder="Veuillez écrire votre adresse ici...."
+          ></textarea>
+          <label for="ville">Ville</label>
+          <input
+            id="ville"
+            type="text"
+            name="ville"
+            size="20"
+            placeholder="ex: Lille"
+            maxlength="50"
+          />
+          <label for="cod_post">Code postal</label>
+          <input
+            id="cod_post"
+            type="text"
+            name="code postale"
+            placeholder="ex: 59300"
+            size="5"
+            maxlength="5"
+            pattern="[0-9]{5}"
+          />
+        </p>
+        <p>
+          <label for="job">Profession</label>
+          <select id="job" name="profession">
+            <option value="developpeur">Développeur Web</option>
+            <option value="pilote">Pilote D'hélicoptère</option>
+            <option value="deratiseur">Dératiseur</option>
+            <option value="designer">UX Designer</option>
+            <option value="pompier">Pompier</option>
+          </select>
+        </p>
+        <p>
+          <label for="date">Date de naissance:</label>
+          <input id="date" type="date" name="date" />
+          <label for="natio">Nationalité:</label>
+          <select id="natio" name="nationalité">
+            <option value="française">Française</option>
+            <option value="espagnol">Espagnol</option>
+            <option value="allemande">Allemande</option>
+            <option value="atalienne">Italienne</option>
+            <option value="américaine">Américaine</option>
+            <option value="russe">Russe</option>
+          </select>
+          <label for="pays_n">Pays de naissance</label>
+          <select id="pays_n" name="pays de naissance">
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="allemagne">Allemagne</option>
+            <option value="italie">Italie</option>
+            <option value="russie">Russie</option>
+            <option value="etats-unis">États-Unis</option>
+          </select>
+        </p>
+        <p>
+          <label for="num_s">Numéro sécurité social:</label>
+          <input
+            id="num_s"
+            type="text"
+            name="numéro sécurité"
+            placeholder="ex: 2 69 ** ** *** *** **"
+            maxlength="15"
+            pattern="[0-9]{15}"
+          />
+        </p>
+        <p>
+          <label for="num_p">Numéro de passeport:</label>
+          <input
+            type="text"
+            id="num_p"
+            name="numéro passeport"
+            placeholder="ex:59RF05400"
+            size="9"
+            maxlength="9"
+          />
+        </p>
+        <p>
+          <label for="date_dp">Date de délivrance du passeport:</label>
+          <input id="date_dp" type="date" name="déli passeport" />
+          <label for="date_vp">Date de validité du passeport:</label>
+          <input id="date_vp" type="date" name="vali passeport" />
+        </p>
+        <p>
+          <button type="submit" value="submit">Envoyer</button>
+          <button type="reset" value="reset">Réinitialiser</button>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>
